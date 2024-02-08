@@ -50,6 +50,24 @@ tibble(year = 1875:1972,
 ```
 
 
+We are interested in the height of Black Cheery Trees 
+
+```{r}
+#| label: fig-treeheight 
+#| fig-cap: Balck CHerrt Tree Height 
+#| echo: false 
+
+library(tidyverse)
+
+datasets::trees |> 
+  as_tibble() |> 
+  ggplot(aes(x = Height, fill = Height)) +
+  geom_bar()
+
+
+```
+
+
 Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 
 ```{r}
