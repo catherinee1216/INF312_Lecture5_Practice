@@ -138,6 +138,23 @@ analysis_data |>
 
 Talk way more about it. 
 
+```{r}
+
+#| label: fig-table
+#| fig-cap: Table 
+#| echo: false
+#| warning: false
+#| message: false
+
+datasets::morley |> 
+  tibble() |> 
+  group_by(Expt) |>
+  summarise(average = mean(Speed)) |>
+  knitr::kable(
+    col.names = c("Experiement Number", "Average Speed"), digits = 0
+  )
+
+```
 
 
 # Model
