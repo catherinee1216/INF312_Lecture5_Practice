@@ -67,6 +67,9 @@ datasets::trees |>
 ```
 
 ```{r}
+#| label: fig-ugly graph
+#| fig-cap: ugly graph
+#| echo: false 
 
 library(palmerpenguins)
 
@@ -254,25 +257,6 @@ posterior_vs_prior(first_model) +
 ```
 
 ## Diagnostics
-
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
-
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
-
-```{r}
-#| echo: false
-#| eval: true
-#| message: false
-#| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
-
-plot(first_model, "trace")
-
-plot(first_model, "rhat")
-```
 
 
 
