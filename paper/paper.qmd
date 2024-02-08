@@ -75,7 +75,7 @@ ggplot(data = penguins,
            y = body_mass_g)) +
   geom_point(aes(color = species,
                  shape = species),
-             size = 8,
+             size = 15,
              alpha = 0.8) +
   scale_color_manual(values = c("orange", "darkorange", "darkorange1")) +
   labs(
